@@ -1,5 +1,5 @@
 [
-    { "id": "player/base", "width": 32, "height": 32, "offsetX": -8 },
+    { "id": "player/base_64x64", "width": 64, "height": 64, "offsetX": -16 },
 
     { "id": "player/helmet/cobalthelmet", "offsetX": -8 },
     { "id": "player/helmet/ironhelmet", "offsetX": -8 },

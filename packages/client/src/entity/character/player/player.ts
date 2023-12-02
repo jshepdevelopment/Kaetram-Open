@@ -379,7 +379,7 @@ export default class Player extends Character {
         // Use the armour skin if it exists.
         if (armourSkin.key && armourSkin.drawable) return armourSkin.key;
 
-        return 'player/base';
+        return 'player/base_64x64';
     }
 
     //// Shortcut functions for getting equipment objects. ////
