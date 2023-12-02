@@ -575,52 +575,52 @@ export default {
                 // Default animations for a player character.
                 return {
                     idle_down: {
-                        length: 4,
-                        row: 0
-                    },
-                    idle_right: {
-                        length: 4,
-                        row: 1
-                    },
-                    idle_up: {
-                        length: 4,
-                        row: 2
-                    },
-                    walk_down: {
-                        length: 4,
-                        row: 3
-                    },
-                    walk_right: {
-                        length: 4,
-                        row: 4
-                    },
-                    walk_up: {
-                        length: 4,
-                        row: 5
-                    },
-                    atk_down: {
-                        length: 4,
-                        row: 6
-                    },
-                    atk_right: {
-                        length: 4,
+                        length: 1,
                         row: 7
                     },
-                    atk_up: {
-                        length: 4,
+                    idle_right: {
+                        length: 1,
+                        row: 3
+                    },
+                    idle_up: {
+                        length: 1,
                         row: 8
                     },
-                    bow_atk_down: {
-                        length: 4,
-                        row: 9
-                    },
-                    bow_atk_right: {
-                        length: 4,
+                    walk_down: {
+                        length: 8,
                         row: 10
                     },
-                    bow_atk_up: {
-                        length: 4,
+                    walk_right: {
+                        length: 8,
                         row: 11
+                    },
+                    walk_up: {
+                        length: 8,
+                        row: 8
+                    },
+                    atk_down: {
+                        length: 5,
+                        row: 14
+                    },
+                    atk_right: {
+                        length: 5,
+                        row: 15
+                    },
+                    atk_up: {
+                        length: 5,
+                        row: 12
+                    },
+                    bow_atk_down: {
+                        length: 12,
+                        row: 18
+                    },
+                    bow_atk_right: {
+                        length: 12,
+                        row: 19
+                    },
+                    bow_atk_up: {
+                        length: 12,
+                        row: 16
                     }
                 };
             }
