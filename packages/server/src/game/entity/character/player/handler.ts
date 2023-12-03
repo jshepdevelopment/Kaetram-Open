@@ -806,13 +806,11 @@ export default class Handler {
          * It will not accomplish much, but it is enough for now.
          */
 
-        if (this.player.cheatScore > 15) {
-            this.player.sendToSpawn();
+        if (this.player.cheatScore > 15) this.player.cheatScore = 0;
+        //this.player.sendToSpawn();
+        //this.player.connection.reject('cheating');
 
-            this.player.connection.reject('cheating');
-        }
-
-        log.general(`[${this.player.username}] Cheat score: ${this.player.cheatScore}`);
+        //log.general(`[${this.player.username}] Cheat score: ${this.player.cheatScore}`);
     }
 
     /**
