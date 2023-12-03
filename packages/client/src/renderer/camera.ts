@@ -3,7 +3,7 @@ import { Modules } from '@kaetram/common/network';
 import type Character from '../entity/character/character';
 
 export const MAXIMUM_ZOOM = 8,
-    DEFAULT_ZOOM = 4,
+    DEFAULT_ZOOM = 1.6,
     MAX_GRID_WIDTH = 64,
     MAX_GRID_HEIGHT = 32;
 
@@ -45,7 +45,7 @@ export default class Camera {
 
     // The maximum and minimum zoom factors.
     public maxZoom = MAXIMUM_ZOOM;
-    public minZoom = 2.6;
+    public minZoom = DEFAULT_ZOOM;
 
     private zoomCallback?: () => void;
 
@@ -317,7 +317,7 @@ export default class Camera {
 
     public updateMinimumZoom(mobile = false): void {
         // Update the minimum zoom.
-        this.minZoom = mobile ? 2 : 2.6;
+        this.minZoom = mobile ? 2 : DEFAULT_ZOOM;
 
         this.zoom();
     }
