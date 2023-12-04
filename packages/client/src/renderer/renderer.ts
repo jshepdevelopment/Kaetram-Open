@@ -1153,7 +1153,7 @@ export default class Renderer {
         if (this.drawNames) {
             this.drawText(
                 entity.name,
-                this.camera.borderOffsetWidth / 2 + 8 * this.camera.zoomFactor,
+                this.camera.borderOffsetWidth / 2 + 16 * this.camera.zoomFactor,
                 this.camera.borderOffsetHeight / 2 - nameOffset * this.camera.zoomFactor,
                 true,
                 false,
@@ -1166,7 +1166,7 @@ export default class Renderer {
         if (this.drawLevels && entity.level)
             this.drawText(
                 `Level ${entity.level}`,
-                this.camera.borderOffsetWidth / 2 + 8 * this.camera.zoomFactor,
+                this.camera.borderOffsetWidth / 2 + 16 * this.camera.zoomFactor,
                 this.camera.borderOffsetHeight / 2 - 10 * this.camera.zoomFactor,
                 true,
                 false,

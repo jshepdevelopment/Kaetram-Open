@@ -446,6 +446,10 @@ export default {
                 return { x: -8, y: -14 };
             }
 
+            case 'player': {
+                return { x: 0, y: -20 };
+            }
+
             default: {
                 return { x: -this.tileSize, y: -this.tileSize };
             }
