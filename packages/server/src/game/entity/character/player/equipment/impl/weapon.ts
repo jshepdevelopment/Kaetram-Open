@@ -22,6 +22,7 @@ export default class Weapon extends Equipment {
 
     // Weapon type
     private bow = false;
+    private spear = false;
     private archer = false;
     private magic = false;
     private twoHanded = false;
@@ -54,6 +55,7 @@ export default class Weapon extends Equipment {
         this.manaCost = item.manaCost;
 
         this.bow = item.isBow();
+        this.spear = item.isSpear();
         this.archer = item.isArcherWeapon();
         this.magic = item.isMagicWeapon();
         this.twoHanded = item.isTwoHanded();
@@ -81,6 +83,7 @@ export default class Weapon extends Equipment {
         this.mining = -1;
         this.fishing = -1;
         this.bow = false;
+        this.spear = false;
         this.archer = false;
         this.magic = false;
         this.twoHanded = false;
@@ -250,6 +253,7 @@ export default class Weapon extends Equipment {
             data.attackRange = this.attackRange;
             data.attackStyles = this.attackStyles;
             data.bow = this.bow;
+            data.spear = this.spear;
             data.archer = this.archer;
         }
 

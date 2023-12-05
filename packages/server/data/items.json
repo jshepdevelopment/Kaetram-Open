@@ -1,4 +1,31 @@
 {
+    "cane": {
+        "type": "weapon",
+        "name": "Cane",
+        "weaponType": "spear",
+        "skill": "accuracy",
+        "level": 1,
+        "attackStats": {
+            "crush": 2,
+            "slash": 2,
+            "stab": 3,
+            "archery": 0,
+            "magic": 0
+        },
+        "defenseStats": {
+            "crush": 1,
+            "slash": 1,
+            "stab": 2,
+            "archery": 0,
+            "magic": 0
+        },
+        "bonuses": {
+            "accuracy": 4,
+            "strength": 1,
+            "archery": 0,
+            "magic": 0
+        }
+    },
     "coppersword": {
         "type": "weapon",
         "name": "Copper Sword",
