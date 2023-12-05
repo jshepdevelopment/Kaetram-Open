@@ -13,6 +13,9 @@ export default class Equipment {
     // Used to determine if the weapon is a bow or not.
     public bow = false;
 
+    // Used to determine if the weapon is a spear or not.
+    public spear = false;
+
     // Used for ignoring rendering of the equipment.
     public drawable = false;
 

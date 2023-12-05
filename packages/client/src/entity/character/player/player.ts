@@ -5,6 +5,7 @@ import Friend from './friend';
 import Equipment from './equipment';
 
 import Character from '../character';
+import log from '../../../lib/log';
 
 import { Modules } from '@kaetram/common/network';
 
@@ -53,8 +54,8 @@ export default class Player extends Character {
     public override mana = 0;
     public override maxMana = 0;
 
-    protected override attackAnimationSpeed = 120;
-    protected override walkAnimationSpeed = 160;
+    protected override attackAnimationSpeed = 50;
+    protected override walkAnimationSpeed = 100;
 
     // Mapping of all equipments to their type.
     public equipments: { [key: number]: Equipment } = {};
@@ -230,6 +231,7 @@ export default class Player extends Character {
             attackStyle,
             attackStyles,
             bow,
+            spear,
             light
         } = equipment;
 
@@ -254,6 +256,7 @@ export default class Player extends Character {
             this.setAttackStyle(attackStyle!, attackStyles!);
 
             this.equipments[type].bow = !!bow;
+            this.equipments[type].spear = !!spear;
         }
 
         // If a light is present on the equipment just apply it.
@@ -843,6 +846,9 @@ export default class Player extends Character {
     ): void {
         // Update the animation name if we're using a bow.
         if (name === 'atk' && this.getWeapon().bow) name = 'bow_atk';
+
+        // Update the animation name if we're using a spear.
+        if (name === 'atk' && this.getWeapon().spear) name = 'spear_atk';
 
         super.setAnimation(name, speed, count, onEndCount);
     }

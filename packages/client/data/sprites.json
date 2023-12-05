@@ -142,6 +142,7 @@
     { "id": "player/skin/darkskeletonskin", "offsetX": -8 },
     { "id": "player/skin/oldmanskin", "offsetX": -8 },
 
+    { "id": "player/weapon/cane", "width": 64, "height": 64, "offsetX": -16 },
     { "id": "player/weapon/bronzebattleaxe", "offsetY": -24 },
     { "id": "player/weapon/ironbattleaxe", "offsetY": -24 },
     { "id": "player/weapon/goldbattleaxe", "offsetY": -24 },
@@ -4758,47 +4759,9 @@
     },
     {
         "id": "mobs/skeleton",
-        "width": 48,
-        "height": 48,
-        "animations": {
-            "atk_right": {
-                "length": 3,
-                "row": 0
-            },
-            "walk_right": {
-                "length": 4,
-                "row": 1
-            },
-            "idle_right": {
-                "length": 2,
-                "row": 2
-            },
-            "atk_up": {
-                "length": 3,
-                "row": 3
-            },
-            "walk_up": {
-                "length": 4,
-                "row": 4
-            },
-            "idle_up": {
-                "length": 3,
-                "row": 5
-            },
-            "atk_down": {
-                "length": 3,
-                "row": 6
-            },
-            "walk_down": {
-                "length": 4,
-                "row": 7
-            },
-            "idle_down": {
-                "length": 3,
-                "row": 8
-            }
-        },
-        "offsetY": -20
+        "width": 64,
+        "height": 64,
+        "offsetY": -16
     },
     {
         "id": "mobs/skeletonking",
@@ -6922,6 +6885,7 @@
     { "id": "items/burger" },
     { "id": "items/cake" },
     { "id": "items/candykey" },
+    { "id": "items/cane" },
     { "id": "items/cayennebowlsmall" },
     { "id": "items/cayennepepper" },
     { "id": "items/cayenneshaker" },

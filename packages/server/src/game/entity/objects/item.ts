@@ -648,6 +648,15 @@ export default class Item extends Entity {
     }
 
     /**
+     * Checks whether the weapon type is a spear.
+     * @returns Whether or not the item is a spear.
+     */
+
+    public isSpear(): boolean {
+        return this.weaponType === 'spear';
+    }
+
+    /**
      * @returns Whether or not the equipment is two handed.
      */
 

@@ -237,8 +237,8 @@
     },
 
     "skeleton": {
-        "name": "Spooky Skeleton",
-        "description": "I wonder if this skeleton is made out of bones.",
+        "name": "Skeleton",
+        "description": "Skeleton summoned in the storage room for some reason.",
         "drops": [
             {
                 "key": "bronzespear",
