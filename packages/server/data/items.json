@@ -1240,12 +1240,12 @@
         "type": "weapon",
         "name": "Club",
         "weaponType": "sword",
-        "price": 5000,
+        "price": 30,
         "skill": "strength",
-        "level": 25,
+        "level": 1,
         "attackStats": {
             "crush": 0,
-            "slash": 0,
+            "slash": 10,
             "stab": 0,
             "archery": 0,
             "magic": 0
