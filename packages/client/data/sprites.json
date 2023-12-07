@@ -179,7 +179,49 @@
     { "id": "player/weapon/bonebonker", "offsetY": -24 },
     { "id": "player/weapon/brutishblade", "offsetY": -24 },
     { "id": "player/weapon/cellobello", "width": 64, "height": 64, "offsetX": -24, "offsetY": -32 },
-    { "id": "player/weapon/club", "offsetY": -24 },
+    {
+        "id": "player/weapon/club",
+        "width": 192,
+        "height": 192,
+        "animations": {
+            "idle_down": {
+                "length": 1,
+                "row": 6
+            },
+            "idle_right": {
+                "length": 1,
+                "row": 7
+            },
+            "idle_up": {
+                "length": 1,
+                "row": 4
+            },
+            "walk_down": {
+                "length": 7,
+                "row": 6
+            },
+            "walk_right": {
+                "length": 7,
+                "row": 7
+            },
+            "walk_up": {
+                "length": 7,
+                "row": 4
+            },
+            "atk_down": {
+                "length": 5,
+                "row": 3
+            },
+            "atk_right": {
+                "length": 5,
+                "row": 2
+            },
+            "atk_up": {
+                "length": 5,
+                "row": 0
+            }
+        }
+    },
     { "id": "player/weapon/demonicstaff", "offsetY": -24 },
     { "id": "player/weapon/dragonscale", "offsetY": -24 },
     { "id": "player/weapon/etherialblade", "width": 64, "height": 64, "offsetX": -24, "offsetY": -32 },
